@@ -1,0 +1,34 @@
+
+1. The Collection framework in Java is a set of classes and interfaces that provide common functionality for storing and manipulating groups of objects. The Collection framework defines 
+several core interfaces, such as Collection, List, Set, Map, Queue, Deque, etc., and provides various implementations, such as ArrayList, LinkedList, HashSet, HashMap, PriorityQueue, etc.
+The Collection framework also provides algorithms for sorting, searching, shuffling, and other operations on collections¹.
+
+2. The difference between ArrayList and LinkedList is that ArrayList internally uses a dynamic array to store the elements, while LinkedList internally uses a doubly linked list to
+store the elements. ArrayList is better for storing and accessing data, as it provides random access to any element in constant time. LinkedList is better for manipulating data,
+as it allows faster insertion and deletion at any position. ArrayList has a default initial capacity of 10, while LinkedList has no such concept. ArrayList cannot store primitive 
+types, while LinkedList can store both primitives and objects.
+
+3. The difference between Iterator and ListIterator is that Iterator can traverse only in forward direction over any collection, while ListIterator can traverse in both forward 
+and backward directions over a list. Iterator has three methods: hasNext(), next(), and remove(), while ListIterator has more methods, such as hasPrevious(), previous(), add(),
+set(), nextIndex(), and previousIndex(). Iterator can only read and remove elements, while ListIterator can also add and modify elements. Iterator is a universal cursor for all
+collections, while ListIterator is specific to lists.
+
+4. The difference between Iterator and Enumeration is that Iterator is an improved version of Enumeration with the additional functionality of removing elements. Iterator has 
+three methods: hasNext(), next(), and remove(), while Enumeration has only two methods: hasMoreElements() and nextElement(). Iterator can be applied to any collection, while 
+Enumeration can only be applied to legacy classes, such as Vector and Hashtable. Iterator is faster and safer than Enumeration, as it does not allow other threads to modify the 
+collection while iterating.
+
+5. The difference between List and Set is that List is an ordered collection that allows duplicates, while Set is an unordered collection that enforces uniqueness. List maintains 
+the insertion order of elements, or sorts them according to a specified comparator. Set does not preserve any order, unless it is a sorted set, such as TreeSet. List allows multiple 
+null elements, while Set allows at most one null element. List has more methods for positional access and search, while Set has fewer methods and relies on equals() and hashCode() 
+for comparison.
+
+6. The difference between HashSet and TreeSet is that HashSet uses a hash table to store the elements, while TreeSet uses a balanced binary tree to store the elements. HashSet offers 
+constant time performance for add, remove, and contains operations, while TreeSet offers logarithmic time performance for these operations. HashSet does not guarantee any order of 
+elements, while TreeSet sorts the elements in natural order or according to a specified comparator. HashSet allows null elements, while TreeSet does not allow null elements.
+
+7. The difference between Array and ArrayList is that Array is a fixed-length data structure, while ArrayList is a variable-length collection class. Array can store both primitives 
+and objects, while ArrayList can only store objects. Array has no methods to manipulate the elements, while ArrayList has methods to add, remove, clear, and resize the elements. 
+Array can be multidimensional, while ArrayList is always one-dimensional. Array can be created using the new operator or using the literal syntax, while ArrayList can be created 
+using the new operator or using the asList() method⁷.
+
